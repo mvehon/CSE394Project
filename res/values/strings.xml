@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">CSE394 Project</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">History</string>
+    <string name="title_section5">Options</string>
+    <string name="title_section4">Daily</string>
+    <string name="title_section3">Weekly</string>
+    <string name="title_section2">Progress</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Test</string>
+
+    <array name="typelist">
+        <item>Art</item>
+        <item>Cleaning</item>
+        <item>Education</item>
+        <item>Exercise</item>
+        <item>Productivity</item>
+        <item>Social</item>
+    </array>
+
+</resources>

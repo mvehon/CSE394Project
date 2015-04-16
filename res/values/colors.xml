@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Offred">#800517</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Gray">#606060</color>
+    <color name="Green">#339933</color>
+    <color name="pressed_dictionary">#CC33B5E5</color>
+    <color name="bluebutton">#24adde</color>
+    <color name="greenbutton">#7caf00</color>
+    <color name="redbutton">#db1313</color>
+    <color name="orangebutton">#ffa713</color>
+    <color name="purplebutton">#b368d9</color>
+    <color name="newgray">#c6c6c6</color>
+    <color name="bluebutton2">#33B5E5</color>
+    <color name="greenbutton2">#99CC00</color>
+    <color name="redbutton2">#FF4444</color>
+    <color name="navy">#000080</color>
+</resources>
