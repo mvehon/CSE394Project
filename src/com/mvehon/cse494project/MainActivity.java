@@ -538,7 +538,7 @@ public class MainActivity extends FragmentActivity implements
 		if (exp >= xpbound) {
 
 			exp = exp - xpbound;
-			int herp = Integer.parseInt((SpannableString) levelnumber.getText()+"");
+			int herp = Integer.parseInt((String) levelnumber.getText()+"");
 			herp += 1;
 			levelnumber.setText(Integer.toString(herp));
 			xpbound += 25;
@@ -587,9 +587,9 @@ public class MainActivity extends FragmentActivity implements
 
 		fixXpBarLength();
 		
-		prefs.edit().putString("levelnumber", (SpannableString) levelnumber.getText()+"").commit();
-		prefs.edit().putString("leveltitle", (SpannableString) leveltitle.getText()+"").commit();
-		prefs.edit().putString("xpamount", (SpannableString) xpamount.getText()+"").commit();
+		prefs.edit().putString("levelnumber", (String) levelnumber.getText()+"").commit();
+		prefs.edit().putString("leveltitle", (String) leveltitle.getText()+"").commit();
+		prefs.edit().putString("xpamount", (String) xpamount.getText()+"").commit();
 		prefs.edit().putString("xpamounttag", (String) xpamount.getTag()).commit();
 	}
 	
