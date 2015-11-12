@@ -1,91 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fffecd">
 
-    <ScrollView
-        android:id="@+id/scrollView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+      <TextView
+          android:id="@+id/dtrng"
+          android:layout_width="200dp"
+          android:layout_height="43dp"
+          android:background="@drawable/week_bg"
+          android:gravity="center|center_vertical"
+          android:text="Date Range"
+          android:textColor="@color/White"
+          android:textSize="18dp" />
+      
+       <Button
+           android:id="@+id/minus"
+           android:layout_width="fill_parent"
+           android:layout_height="30dp"
+           android:layout_below="@+id/plus"
+           android:layout_marginBottom="-5dip"
+           android:layout_marginLeft="-5dip"
+           android:layout_marginRight="-5dip"
+           android:layout_marginTop="-5dip"
+           android:layout_toRightOf="@+id/dtrng"
+           android:text="Remove Quests"
+           android:textSize="12sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" 
-            android:layout_marginTop="15dp">
+       <Button
+           android:id="@+id/plus"
+           android:layout_width="fill_parent"
+           android:layout_height="30dp"
+           android:layout_gravity="center"
+           android:layout_marginBottom="-5dip"
+           android:layout_marginLeft="-5dip"
+           android:layout_marginRight="-5dip"
+           android:layout_marginTop="-5dip"
+           android:layout_toRightOf="@+id/dtrng"
+           android:text="Add Quests"
+           android:textSize="12sp" />
+       
+	     <ScrollView
+		 	android:layout_width="fill_parent"
+			android:layout_height="fill_parent" 
+			android:layout_below="@+id/dtrng">
+			
+	         <LinearLayout
+		        android:id="@+id/quest_ll"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical" >         
+	 	    </LinearLayout>
+	 	 </ScrollView>
+	 	 
+		<Button
+           android:id="@+id/completed"
+           android:layout_width="fill_parent"
+           android:layout_height="60dp"
+           android:layout_gravity="center"
+           android:layout_alignParentBottom="true"
+           android:layout_marginBottom="-5dip"
+           android:layout_marginLeft="-5dip"
+           android:layout_marginRight="-5dip"
+           android:text="Complete" />
 
-            <LinearLayout
-                android:id="@+id/headerlayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp" >
-
-                <LinearLayout
-                    android:id="@+id/cat"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:background="@android:color/holo_green_dark"
-                    android:gravity="center"
-                    android:orientation="vertical" >
-
-                    <TextView
-                        android:id="@+id/dtrng"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|center_vertical"
-                        android:gravity="center|center_vertical"
-                        android:text="Date Range"
-                        android:textSize="18dp" />
-                </LinearLayout>
-
-                <Button
-                    android:id="@+id/minus"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="2dp"
-                    android:minHeight="20dp"
-                    android:minWidth="25dp"
-                    android:text="-" />
-
-                <Button
-                    android:id="@+id/plus"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="2dp"
-                    android:minHeight="20dp"
-                    android:minWidth="25dp"
-                    android:text="+" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/quest_ll"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" 
-                android:padding="10dp">
-
-                <Button
-                    android:id="@+id/completed"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Complete" />
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
-
-</LinearLayout>
+</RelativeLayout>
